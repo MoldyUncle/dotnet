@@ -1,5 +1,5 @@
 ﻿
-public class Ucastnik
+public class Ucastnik                   /// Definování skóre
 {
     public int Skore {get; set;}
 

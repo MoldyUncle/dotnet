@@ -7,7 +7,7 @@ public class Karty
         Number = number;
     }
 
-    public int Hit()
+    public int Hit()                    /// generátor náhodných čísel od 1 do 11
     {
         return Random.Shared.Next(1, 12);
     }
