@@ -14,6 +14,8 @@ while (true)
         break;
     }
     
+    Console.Clear();
+    
     Console.WriteLine("Rozdavac::  " + rozdavac.Skore);
     Console.WriteLine("Hrac::  " + hrac.Skore);
     Console.WriteLine("");
@@ -37,6 +39,33 @@ while (true)
             Console.WriteLine("Dostal jste: " +  hrac.Skore);
             Console.WriteLine("Game Over");
             break;
+        }
+    }
+
+    if (input == "stand" || input == "s")
+    {
+        Console.WriteLine("Hrači stojí");
+        
+        rozdavac.Skore = rozdavac.Skore + karty.Hit();
+
+        if (rozdavac.Skore == 21)
+        {
+            Console.WriteLine("Rozdavač měl: " +  rozdavac.Skore);
+            Console.WriteLine("Rozdavač !VYHRÁL!");
+            break;
+        }
+
+        if (rozdavac.Skore > 21)
+        {
+            Console.WriteLine("Rozdavač měl: " +  rozdavac.Skore);
+            Console.WriteLine("Hráč !VYHRÁL!");
+            break;
+        }
+
+        if (rozdavac.Skore < 17)
+        {
+            rozdavac.Skore = rozdavac.Skore + karty.Hit();
+            Console.WriteLine("Rozdavač má: " +  rozdavac.Skore);
         }
     }
 }
