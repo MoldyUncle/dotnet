@@ -5,7 +5,7 @@ int remiza = 0;
 
 while (true)
 {
-    Console.ForegroundColor = ConsoleColor.Yellow;
+    Console.ForegroundColor = ConsoleColor.Yellow;                  ////Záznam výher
     Console.WriteLine("************************");
     Console.WriteLine("Hráč výhry:: " + hrac_vyhra);
     Console.WriteLine("Rozdavač výhry:: " +  rozdavac_vyhra);
@@ -24,7 +24,9 @@ while (true)
         if (hrac.Skore == 21)
         {
             Console.WriteLine("Dostal jste: " +  hrac.Skore);
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("!!BLACK JACK!!");
+            hrac_vyhra++;
             break;
         }
         
