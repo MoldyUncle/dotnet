@@ -1,12 +1,7 @@
 ﻿
-public class Rozdavac
+public class Rozdavac : Ucastnik
 {
-    public int Karty_rozdavac { get; set; }
-
-    public Rozdavac(int karty_rozdavac)
+    public Rozdavac(int skore) : base(skore)
     {
-        Karty_rozdavac = karty_rozdavac;
     }
-    
-    
 }

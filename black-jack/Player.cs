@@ -1,10 +1,7 @@
 ﻿
-public class Hrac
+public class Player : Ucastnik
 {
-    public int karty_hrac { get; set; }
-
-    public Hrac(int karty_hrac)
+    public Player(int skore) : base(skore)
     {
-        this.karty_hrac = karty_hrac;
     }
 }
