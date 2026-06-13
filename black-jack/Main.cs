@@ -2,6 +2,7 @@
 Player hrac = new Player(0 + Random.Shared.Next(1, 12)+ Random.Shared.Next(1, 12));/// hráč začíná s 2 náh. kartama
 Rozdavac rozdavac = new Rozdavac(0 + Random.Shared.Next(1, 12));    /// Rozdavač začíná s jednou vyditelnou náhodnou kartou
 Karty karty = new Karty(0);
+bool konec = false;
 
 while (true)
 {
@@ -52,13 +53,16 @@ while (true)
             {
                 Console.WriteLine("Rozdavač měl: " +  rozdavac.Skore);
                 Console.WriteLine("Rozdavač !VYHRÁL!");
+                konec = true;
                 break;
             }
             
             if (rozdavac.Skore > 21)
             {
+                Console.WriteLine("Rozdavač měl: " +  rozdavac.Skore);
                 Console.WriteLine("Rozdavač přesáhl 21");
                 Console.WriteLine("Hráč !VYHRÁL!");
+                konec = true;
                 break;
             }
 
@@ -69,6 +73,7 @@ while (true)
                     Console.WriteLine("Rozdac měl: "  +  rozdavac.Skore);
                     Console.WriteLine("Hráč měl: " + hrac.Skore);
                     Console.WriteLine("Rozdavač !VYHRÁL!");
+                    konec = true;
                     break;
                 }
 
@@ -77,6 +82,7 @@ while (true)
                     Console.WriteLine("Rozdac měl: "  +  rozdavac.Skore);
                     Console.WriteLine("Hráč měl: " + hrac.Skore);
                     Console.WriteLine("Hráč !VYHRÁL!");
+                    konec = true;
                     break;
                 }
 
@@ -85,6 +91,7 @@ while (true)
                     Console.WriteLine("Rozdac měl: "  +  rozdavac.Skore);
                     Console.WriteLine("Hráč měl: " + hrac.Skore);
                     Console.WriteLine("PUSH");
+                    konec = true;
                     break;
                 }
             }
@@ -97,5 +104,10 @@ while (true)
         }
 
         
+    }
+
+    if (konec == true)
+    {
+        break;
     }
 }
