@@ -1,0 +1,15 @@
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\bin\Debug\net10.0\black-jack.exe
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\bin\Debug\net10.0\black-jack.deps.json
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\bin\Debug\net10.0\black-jack.runtimeconfig.json
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\bin\Debug\net10.0\black-jack.dll
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\bin\Debug\net10.0\black-jack.pdb
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\obj\Debug\net10.0\black-jack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\obj\Debug\net10.0\black-jack.AssemblyInfoInputs.cache
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\obj\Debug\net10.0\black-jack.AssemblyInfo.cs
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\obj\Debug\net10.0\black-jack.csproj.CoreCompileInputs.cache
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\obj\Debug\net10.0\black-jack.sourcelink.json
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\obj\Debug\net10.0\black-jack.dll
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\obj\Debug\net10.0\refint\black-jack.dll
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\obj\Debug\net10.0\black-jack.pdb
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\obj\Debug\net10.0\black-jack.genruntimeconfig.cache
+C:\Users\gabrh\Desktop\ahoj\black-jack\black-jack\obj\Debug\net10.0\ref\black-jack.dll
