@@ -28,6 +28,7 @@ while (true)
         if (hrac.Skore == 21)
         {
             Console.WriteLine("Dostal jste: " +  hrac.Skore);
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Winner winner chicken dinner!!");
             break;
         }
@@ -35,6 +36,7 @@ while (true)
         if (hrac.Skore > 21)
         {
             Console.WriteLine("Dostal jste: " +  hrac.Skore);
+            Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("Game Over");
             break;
         }
@@ -52,6 +54,7 @@ while (true)
             if (rozdavac.Skore == 21)
             {
                 Console.WriteLine("Rozdavač měl: " +  rozdavac.Skore);
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("Rozdavač !VYHRÁL!");
                 konec = true;
                 break;
@@ -61,6 +64,7 @@ while (true)
             {
                 Console.WriteLine("Rozdavač měl: " +  rozdavac.Skore);
                 Console.WriteLine("Rozdavač přesáhl 21");
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Hráč !VYHRÁL!");
                 konec = true;
                 break;
@@ -72,6 +76,7 @@ while (true)
                 {
                     Console.WriteLine("Rozdac měl: "  +  rozdavac.Skore);
                     Console.WriteLine("Hráč měl: " + hrac.Skore);
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("Rozdavač !VYHRÁL!");
                     konec = true;
                     break;
@@ -81,6 +86,7 @@ while (true)
                 {
                     Console.WriteLine("Rozdac měl: "  +  rozdavac.Skore);
                     Console.WriteLine("Hráč měl: " + hrac.Skore);
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Hráč !VYHRÁL!");
                     konec = true;
                     break;
@@ -90,6 +96,7 @@ while (true)
                 {
                     Console.WriteLine("Rozdac měl: "  +  rozdavac.Skore);
                     Console.WriteLine("Hráč měl: " + hrac.Skore);
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("PUSH");
                     konec = true;
                     break;
@@ -106,6 +113,7 @@ while (true)
         
     }
 
+    Console.Clear();
     if (konec == true)
     {
         break;
