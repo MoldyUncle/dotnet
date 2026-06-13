@@ -29,9 +29,9 @@ while (true)
             hrac_vyhra++;
             break;
         }
-        
         Console.WriteLine("Rozdavac::  " + rozdavac.Skore);
         Console.WriteLine("Hrac::  " + hrac.Skore);
+        Console.WriteLine("");
         Console.WriteLine("Hit");
         Console.WriteLine("Stand");
         string input = Console.ReadLine();
