@@ -23,7 +23,7 @@ while (true)
     {
         if (hrac.Skore == 21)
         {
-            Console.WriteLine("Dostal jste: " +  hrac.Skore);
+            Console.WriteLine("Dostal jste: " +  hrac.Skore);       ///Blackjack výhra
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("!!BLACK JACK!!");
             hrac_vyhra++;
@@ -138,6 +138,18 @@ while (true)
 
         else
         {
+            Console.ForegroundColor = ConsoleColor.Red;         ///Chybné hlášení
+            Console.Write("Chyba! ");
+            Console.ResetColor();
+            Console.Write("Napiš ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("HIT ");
+            Console.ResetColor();
+            Console.Write("a nebo ");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("STAND");
+            Console.ResetColor();
+            await Task.Delay(2000);
             Console.Clear();
         }
         
