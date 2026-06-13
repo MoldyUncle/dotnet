@@ -21,6 +21,7 @@ while (true)
 
     if (input == "hit" || input == "h")                     ////HIT
     {
+        Console.Clear();
         hrac.Skore = hrac.Skore + karty.Hit();              /// hrac dostane náhodnou kartu
 
         if (hrac.Skore == 21)
@@ -40,6 +41,7 @@ while (true)
 
     if (input == "stand" || input == "s")                   ///STAND
     {
+        Console.Clear();
         Console.WriteLine("Hrači stojí");
         
         rozdavac.Skore = rozdavac.Skore + karty.Hit();      ///Rozdavač ukáže otočenou druhou kartu
@@ -55,9 +57,36 @@ while (true)
             
             if (rozdavac.Skore > 21)
             {
-                Console.WriteLine("Rozdavač měl: " +  rozdavac.Skore);
+                Console.WriteLine("Rozdavač přesáhl 21");
                 Console.WriteLine("Hráč !VYHRÁL!");
                 break;
+            }
+
+            if (rozdavac.Skore >= 17)
+            {
+                if (rozdavac.Skore > hrac.Skore)        ///rozdavač má víc než hráč tak vyhrává
+                {
+                    Console.WriteLine("Rozdac měl: "  +  rozdavac.Skore);
+                    Console.WriteLine("Hráč měl: " + hrac.Skore);
+                    Console.WriteLine("Rozdavač !VYHRÁL!");
+                    break;
+                }
+
+                if (rozdavac.Skore < hrac.Skore)        ///Hráč má víc takže vyhrává
+                {
+                    Console.WriteLine("Rozdac měl: "  +  rozdavac.Skore);
+                    Console.WriteLine("Hráč měl: " + hrac.Skore);
+                    Console.WriteLine("Hráč !VYHRÁL!");
+                    break;
+                }
+
+                if (rozdavac.Skore == hrac.Skore)       ///Hrác a rozdavač mají stejně takže je remíza
+                {
+                    Console.WriteLine("Rozdac měl: "  +  rozdavac.Skore);
+                    Console.WriteLine("Hráč měl: " + hrac.Skore);
+                    Console.WriteLine("PUSH");
+                    break;
+                }
             }
             
             if (rozdavac.Skore < 17)                        /// rozdavač si bere dokud nemá alespoň 17
