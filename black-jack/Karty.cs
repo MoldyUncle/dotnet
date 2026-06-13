@@ -7,9 +7,9 @@ public class Karty
         Number = number;
     }
 
-    public void Hit()
+    public int Hit()
     {
-        Number = Random.Shared.Next(1, 12);
+        return Random.Shared.Next(1, 12);
     }
     
 }
