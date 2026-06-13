@@ -30,6 +30,7 @@ while (true)
             Console.WriteLine("Dostal jste: " +  hrac.Skore);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Winner winner chicken dinner!!");
+            Console.ResetColor();
             break;
         }
 
@@ -38,6 +39,7 @@ while (true)
             Console.WriteLine("Dostal jste: " +  hrac.Skore);
             Console.ForegroundColor = ConsoleColor.DarkRed;
             Console.WriteLine("Game Over");
+            Console.ResetColor();
             break;
         }
     }
@@ -56,6 +58,7 @@ while (true)
                 Console.WriteLine("Rozdavač měl: " +  rozdavac.Skore);
                 Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.WriteLine("Rozdavač !VYHRÁL!");
+                Console.ResetColor();
                 konec = true;
                 break;
             }
@@ -66,6 +69,7 @@ while (true)
                 Console.WriteLine("Rozdavač přesáhl 21");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Hráč !VYHRÁL!");
+                Console.ResetColor();
                 konec = true;
                 break;
             }
@@ -78,6 +82,7 @@ while (true)
                     Console.WriteLine("Hráč měl: " + hrac.Skore);
                     Console.ForegroundColor = ConsoleColor.DarkRed;
                     Console.WriteLine("Rozdavač !VYHRÁL!");
+                    Console.ResetColor();
                     konec = true;
                     break;
                 }
@@ -88,6 +93,7 @@ while (true)
                     Console.WriteLine("Hráč měl: " + hrac.Skore);
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Hráč !VYHRÁL!");
+                    Console.ResetColor();
                     konec = true;
                     break;
                 }
@@ -98,6 +104,7 @@ while (true)
                     Console.WriteLine("Hráč měl: " + hrac.Skore);
                     Console.ForegroundColor = ConsoleColor.Blue;
                     Console.WriteLine("PUSH");
+                    Console.ResetColor();
                     konec = true;
                     break;
                 }
